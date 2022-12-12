@@ -11,6 +11,12 @@ typedef struct squared_maze {
 	point end;
 } squared_maze;
 
+typedef enum MazeStatus {
+	Empty,
+	Path,
+	Wall
+} MazeStatus;
+
 typedef struct maze {
 	int n;
 	int radius;
